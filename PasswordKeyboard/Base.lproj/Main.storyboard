@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PasswordKeyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1q-kg-kwh">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n8f-CT-Wlg">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MXt-di-HaA">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OPN-u7-YBx">
+                                <state key="normal" title="Display Login"/>
+                                <connections>
+                                    <action selector="didPressDisplayLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bjs-gv-Tbx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login Info Will Go Here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUC-8P-oLv">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fg0-ZP-dvl">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OPN-u7-YBx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6L1-Lg-vHN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="PUC-8P-oLv" secondAttribute="bottom" constant="10" id="AHU-i4-Bkf"/>
+                            <constraint firstItem="MXt-di-HaA" firstAttribute="leading" secondItem="Fg0-ZP-dvl" secondAttribute="leading" id="BqA-jN-8eZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="n8f-CT-Wlg" secondAttribute="trailing" id="Cpd-et-jff"/>
+                            <constraint firstItem="PUC-8P-oLv" firstAttribute="top" secondItem="OPN-u7-YBx" secondAttribute="bottom" constant="8" id="Dkw-xD-UVh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MXt-di-HaA" secondAttribute="trailing" id="I3C-Jb-qdo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="H1q-kg-kwh" secondAttribute="trailing" id="JMl-cb-hE6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OPN-u7-YBx" secondAttribute="trailing" id="SRh-Kw-ChR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PUC-8P-oLv" secondAttribute="trailing" id="aqH-lr-66G"/>
+                            <constraint firstItem="n8f-CT-Wlg" firstAttribute="leading" secondItem="H1q-kg-kwh" secondAttribute="leading" id="bvW-HQ-wFH"/>
+                            <constraint firstItem="Fg0-ZP-dvl" firstAttribute="top" secondItem="n8f-CT-Wlg" secondAttribute="bottom" constant="8" id="cZS-Jq-J4O"/>
+                            <constraint firstItem="H1q-kg-kwh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="coq-Vb-H53"/>
+                            <constraint firstItem="n8f-CT-Wlg" firstAttribute="top" secondItem="H1q-kg-kwh" secondAttribute="bottom" constant="8" id="mMC-hC-XNF"/>
+                            <constraint firstItem="MXt-di-HaA" firstAttribute="top" secondItem="Fg0-ZP-dvl" secondAttribute="bottom" constant="8" id="nJt-HC-dBf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fg0-ZP-dvl" secondAttribute="trailing" id="pEm-KV-C6v"/>
+                            <constraint firstItem="OPN-u7-YBx" firstAttribute="top" secondItem="MXt-di-HaA" secondAttribute="bottom" constant="8" id="qh3-pc-jqO"/>
+                            <constraint firstItem="H1q-kg-kwh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="vS0-AG-mPB"/>
+                            <constraint firstItem="Fg0-ZP-dvl" firstAttribute="leading" secondItem="n8f-CT-Wlg" secondAttribute="leading" id="xwK-lm-hg4"/>
+                            <constraint firstItem="PUC-8P-oLv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="zac-xh-5aD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="displayLabel" destination="PUC-8P-oLv" id="924-VY-DQs"/>
+                        <outlet property="displayLoginButton" destination="OPN-u7-YBx" id="olv-2j-C5u"/>
+                        <outlet property="passwordField" destination="MXt-di-HaA" id="QF6-lL-23W"/>
+                        <outlet property="usernameField" destination="n8f-CT-Wlg" id="ace-Ji-bNU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
