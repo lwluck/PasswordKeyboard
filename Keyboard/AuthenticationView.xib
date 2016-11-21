@@ -11,12 +11,53 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AuthenticationView" customModule="Keyboard" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="263"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ama-jD-ccF">
+                    <rect key="frame" x="0.0" y="0.0" width="271" height="30"/>
+                    <color key="backgroundColor" red="0.93333333330000001" green="0.86274509799999999" blue="0.77647058820000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGw-Ef-jXt">
+                    <rect key="frame" x="271" y="0.0" width="49" height="30"/>
+                    <color key="backgroundColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
+                    <state key="normal" title="Submit">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didPressSubmit:" destination="iN0-l3-epB" eventType="touchUpInside" id="04R-4r-2Ke"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3gM-sW-Hat">
+                    <rect key="frame" x="0.0" y="30" width="320" height="233"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ama-jD-ccF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="185-cW-PVJ"/>
+                <constraint firstItem="ZGw-Ef-jXt" firstAttribute="bottom" secondItem="ama-jD-ccF" secondAttribute="bottom" id="F0E-Ih-j7P"/>
+                <constraint firstItem="ZGw-Ef-jXt" firstAttribute="leading" secondItem="ama-jD-ccF" secondAttribute="trailing" id="HWi-hA-oUH"/>
+                <constraint firstAttribute="trailing" secondItem="3gM-sW-Hat" secondAttribute="trailing" id="MN4-Df-uWe"/>
+                <constraint firstItem="ama-jD-ccF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="PMY-0N-QdO"/>
+                <constraint firstItem="ZGw-Ef-jXt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="aha-Ju-Qr6"/>
+                <constraint firstItem="3gM-sW-Hat" firstAttribute="top" secondItem="ZGw-Ef-jXt" secondAttribute="bottom" id="i7S-9h-d8I"/>
+                <constraint firstAttribute="bottom" secondItem="3gM-sW-Hat" secondAttribute="bottom" id="lu8-qj-uv6"/>
+                <constraint firstAttribute="trailing" secondItem="ZGw-Ef-jXt" secondAttribute="trailing" id="mIK-jB-QOb"/>
+                <constraint firstItem="3gM-sW-Hat" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="uV7-pn-TGu"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="keyboardContainerView" destination="3gM-sW-Hat" id="d22-aQ-rWl"/>
+                <outlet property="passwordLabel" destination="ama-jD-ccF" id="7k8-sT-e49"/>
+                <outlet property="submitButton" destination="ZGw-Ef-jXt" id="vTb-X5-mWj"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="100.5"/>
         </view>
     </objects>
 </document>

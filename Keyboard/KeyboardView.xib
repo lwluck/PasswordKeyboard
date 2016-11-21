@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11535.1" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11523"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardView" customModule="Keyboard" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lI1-bi-jwR">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="GpP-al-1mB">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3EQ-gR-CcV">
+                                    <rect key="frame" x="0.0" y="0.0" width="32" height="44"/>
+                                    <state key="normal" title="1"/>
+                                    <connections>
+                                        <action selector="didPressKeyboardButton:" destination="-1" eventType="touchUpInside" id="Bn1-wM-W59"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCC-Jw-wrS">
+                                    <rect key="frame" x="32" y="0.0" width="32" height="44"/>
+                                    <state key="normal" title="2"/>
+                                    <connections>
+                                        <action selector="didPressKeyboardButton:" destination="-1" eventType="touchUpInside" id="MFV-KI-WK7"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djF-k6-4pv">
+                                    <rect key="frame" x="64" y="0.0" width="32" height="44"/>
+                                    <state key="normal" title="3"/>
+                                    <connections>
+                                        <action selector="didPressKeyboardButton:" destination="-1" eventType="touchUpInside" id="A7P-YW-LzZ"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlZ-cO-UzN">
+                                    <rect key="frame" x="96" y="0.0" width="32" height="44"/>
+                                    <state key="normal" title="4"/>
+                                    <connections>
+                                        <action selector="didPressKeyboardButton:" destination="-1" eventType="touchUpInside" id="VgX-8i-oaB"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUd-E8-zPn">
+                                    <rect key="frame" x="128" y="0.0" width="32" height="44"/>
+                                    <state key="normal" title="5"/>
+                                    <connections>
+                                        <action selector="didPressKeyboardButton:" destination="-1" eventType="touchUpInside" id="91O-Vg-MRI"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EsJ-On-i6B">
+                                    <rect key="frame" x="160" y="0.0" width="32" height="44"/>
+                                    <state key="normal" title="6"/>
+                                    <connections>
+                                        <action selector="didPressKeyboardButton:" destination="-1" eventType="touchUpInside" id="Cgq-k4-eUN"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHd-hR-Tbw">
+                                    <rect key="frame" x="192" y="0.0" width="32" height="44"/>
+                                    <state key="normal" title="7"/>
+                                    <connections>
+                                        <action selector="didPressKeyboardButton:" destination="-1" eventType="touchUpInside" id="byR-Se-s32"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eew-F6-JLW">
+                                    <rect key="frame" x="224" y="0.0" width="32" height="44"/>
+                                    <state key="normal" title="8"/>
+                                    <connections>
+                                        <action selector="didPressKeyboardButton:" destination="-1" eventType="touchUpInside" id="cTK-vE-xLC"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ul8-Nf-kug">
+                                    <rect key="frame" x="256" y="0.0" width="32" height="44"/>
+                                    <state key="normal" title="9"/>
+                                    <connections>
+                                        <action selector="didPressKeyboardButton:" destination="-1" eventType="touchUpInside" id="aHv-Ha-2OY"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bke-jE-biB">
+                                    <rect key="frame" x="288" y="0.0" width="32" height="44"/>
+                                    <state key="normal" title="0"/>
+                                    <connections>
+                                        <action selector="didPressKeyboardButton:" destination="-1" eventType="touchUpInside" id="dLj-uh-JVF"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="9V7-cz-cvZ">
+                            <rect key="frame" x="0.0" y="44" width="320" height="44"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vft-ID-M3K">
+                                    <rect key="frame" x="0.0" y="0.0" width="32" height="44"/>
+                                    <state key="normal" title="Q"/>
+                                    <connections>
+                                        <action selector="didPressKeyboardButton:" destination="-1" eventType="touchUpInside" id="qdD-3e-4jg"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jks-jw-hMm">
+                                    <rect key="frame" x="32" y="0.0" width="32" height="44"/>
+                                    <state key="normal" title="W"/>
+                                    <connections>
+                                        <action selector="didPressKeyboardButton:" destination="-1" eventType="touchUpInside" id="Hkv-Rd-yAC"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFk-K5-iuU">
+                                    <rect key="frame" x="64" y="0.0" width="32" height="44"/>
+                                    <state key="normal" title="E"/>
+                                    <connections>
+                                        <action selector="didPressKeyboardButton:" destination="-1" eventType="touchUpInside" id="BVd-Zb-MSz"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="auA-Rq-jXv">
+                                    <rect key="frame" x="96" y="0.0" width="32" height="44"/>
+                                    <state key="normal" title="R"/>
+                                    <connections>
+                                        <action selector="didPressKeyboardButton:" destination="-1" eventType="touchUpInside" id="9wK-Dx-3Hh"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uml-NS-gUz">
+                                    <rect key="frame" x="128" y="0.0" width="32" height="44"/>
+                                    <state key="normal" title="T"/>
+                                    <connections>
+                                        <action selector="didPressKeyboardButton:" destination="-1" eventType="touchUpInside" id="S1m-r1-WlI"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMr-gx-XhT">
+                                    <rect key="frame" x="160" y="0.0" width="32" height="44"/>
+                                    <state key="normal" title="Y"/>
+                                    <connections>
+                                        <action selector="didPressKeyboardButton:" destination="-1" eventType="touchUpInside" id="Tv6-vN-qP3"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Scx-DP-vq7">
+                                    <rect key="frame" x="192" y="0.0" width="32" height="44"/>
+                                    <state key="normal" title="U"/>
+                                    <connections>
+                                        <action selector="didPressKeyboardButton:" destination="-1" eventType="touchUpInside" id="y9F-UK-sFN"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvP-SG-9WJ">
+                                    <rect key="frame" x="224" y="0.0" width="32" height="44"/>
+                                    <state key="normal" title="I"/>
+                                    <connections>
+                                        <action selector="didPressKeyboardButton:" destination="-1" eventType="touchUpInside" id="Jal-lO-NsF"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zyq-iA-3sY">
+                                    <rect key="frame" x="256" y="0.0" width="32" height="44"/>
+                                    <state key="normal" title="O"/>
+                                    <connections>
+                                        <action selector="didPressKeyboardButton:" destination="-1" eventType="touchUpInside" id="JVD-D9-ZYH"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mf0-Ha-8Dk">
+                                    <rect key="frame" x="288" y="0.0" width="32" height="44"/>
+                                    <state key="normal" title="P"/>
+                                    <connections>
+                                        <action selector="didPressKeyboardButton:" destination="-1" eventType="touchUpInside" id="Ytw-FY-ImX"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0te-vM-Hxa">
+                            <rect key="frame" x="0.0" y="88" width="320" height="44"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DzP-x2-7ej">
+                                    <rect key="frame" x="0.0" y="0.0" width="35.5" height="44"/>
+                                    <state key="normal" title="A"/>
+                                    <connections>
+                                        <action selector="didPressKeyboardButton:" destination="-1" eventType="touchUpInside" id="jdO-ae-EzG"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHI-cC-Vx9">
+                                    <rect key="frame" x="35.5" y="0.0" width="35.5" height="44"/>
+                                    <state key="normal" title="S"/>
+                                    <connections>
+                                        <action selector="didPressKeyboardButton:" destination="-1" eventType="touchUpInside" id="igr-S3-1hs"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xaw-dH-PEW">
+                                    <rect key="frame" x="71" y="0.0" width="35.5" height="44"/>
+                                    <state key="normal" title="D"/>
+                                    <connections>
+                                        <action selector="didPressKeyboardButton:" destination="-1" eventType="touchUpInside" id="s7T-m9-RKu"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIF-t5-t9P">
+                                    <rect key="frame" x="106.5" y="0.0" width="35.5" height="44"/>
+                                    <state key="normal" title="F"/>
+                                    <connections>
+                                        <action selector="didPressKeyboardButton:" destination="-1" eventType="touchUpInside" id="NDo-ga-T1b"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8F-pK-pmF">
+                                    <rect key="frame" x="142" y="0.0" width="36" height="44"/>
+                                    <state key="normal" title="G"/>
+                                    <connections>
+                                        <action selector="didPressKeyboardButton:" destination="-1" eventType="touchUpInside" id="0yF-jJ-TsE"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="co8-GM-NkU">
+                                    <rect key="frame" x="178" y="0.0" width="35.5" height="44"/>
+                                    <state key="normal" title="H"/>
+                                    <connections>
+                                        <action selector="didPressKeyboardButton:" destination="-1" eventType="touchUpInside" id="C8f-3T-pmg"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWb-6U-Isc">
+                                    <rect key="frame" x="213.5" y="0.0" width="35.5" height="44"/>
+                                    <state key="normal" title="J"/>
+                                    <connections>
+                                        <action selector="didPressKeyboardButton:" destination="-1" eventType="touchUpInside" id="0tA-6u-nEQ"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aGA-4b-HEb">
+                                    <rect key="frame" x="249" y="0.0" width="35.5" height="44"/>
+                                    <state key="normal" title="K"/>
+                                    <connections>
+                                        <action selector="didPressKeyboardButton:" destination="-1" eventType="touchUpInside" id="Pep-em-7wb"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Daf-SM-3Wc">
+                                    <rect key="frame" x="284.5" y="0.0" width="35.5" height="44"/>
+                                    <state key="normal" title="L"/>
+                                    <connections>
+                                        <action selector="didPressKeyboardButton:" destination="-1" eventType="touchUpInside" id="EL1-UP-tgg"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="4BG-mB-cTC">
+                            <rect key="frame" x="0.0" y="132" width="320" height="44"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nff-p9-7pA">
+                                    <rect key="frame" x="0.0" y="0.0" width="40" height="44"/>
+                                    <state key="normal" title="Z"/>
+                                    <connections>
+                                        <action selector="didPressKeyboardButton:" destination="-1" eventType="touchUpInside" id="Ghh-5a-Mnv"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5E-qQ-s0g">
+                                    <rect key="frame" x="40" y="0.0" width="40" height="44"/>
+                                    <state key="normal" title="X"/>
+                                    <connections>
+                                        <action selector="didPressKeyboardButton:" destination="-1" eventType="touchUpInside" id="kKY-Le-nXx"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjE-Yo-2zS">
+                                    <rect key="frame" x="80" y="0.0" width="40" height="44"/>
+                                    <state key="normal" title="C"/>
+                                    <connections>
+                                        <action selector="didPressKeyboardButton:" destination="-1" eventType="touchUpInside" id="0Np-Kw-zjD"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJH-Xg-Lqp">
+                                    <rect key="frame" x="120" y="0.0" width="40" height="44"/>
+                                    <state key="normal" title="V"/>
+                                    <connections>
+                                        <action selector="didPressKeyboardButton:" destination="-1" eventType="touchUpInside" id="5kQ-GY-bRP"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Vd-uP-iIv">
+                                    <rect key="frame" x="160" y="0.0" width="40" height="44"/>
+                                    <state key="normal" title="B"/>
+                                    <connections>
+                                        <action selector="didPressKeyboardButton:" destination="-1" eventType="touchUpInside" id="wwn-By-fIc"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="diF-eA-n5E">
+                                    <rect key="frame" x="200" y="0.0" width="40" height="44"/>
+                                    <state key="normal" title="N"/>
+                                    <connections>
+                                        <action selector="didPressKeyboardButton:" destination="-1" eventType="touchUpInside" id="vBc-bf-adj"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHc-Yi-lUz">
+                                    <rect key="frame" x="240" y="0.0" width="40" height="44"/>
+                                    <state key="normal" title="M"/>
+                                    <connections>
+                                        <action selector="didPressKeyboardButton:" destination="-1" eventType="touchUpInside" id="mpf-06-hC2"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAP-Dk-5gZ">
+                                    <rect key="frame" x="280" y="0.0" width="40" height="44"/>
+                                    <state key="normal" title="BS"/>
+                                    <connections>
+                                        <action selector="didPressBackSpace:" destination="-1" eventType="touchUpInside" id="Tjj-rh-fgB"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="aw6-Sc-NIc">
+                            <rect key="frame" x="0.0" y="176" width="320" height="44"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ra-2I-FTf">
+                                    <rect key="frame" x="0.0" y="0.0" width="50.5" height="44"/>
+                                    <state key="normal" title="Next"/>
+                                    <connections>
+                                        <action selector="didPressNextKeyboard:" destination="-1" eventType="touchUpInside" id="xNB-5a-neV"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0PO-xN-f3Y">
+                                    <rect key="frame" x="50.5" y="0.0" width="269.5" height="44"/>
+                                    <state key="normal" title="                Space                "/>
+                                    <connections>
+                                        <action selector="didPressKeyboardButton:" destination="-1" eventType="touchUpInside" id="PbT-Ee-wUC"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="9V7-cz-cvZ" firstAttribute="trailing" secondItem="GpP-al-1mB" secondAttribute="trailing" id="Xsl-Zh-Nx6"/>
+                        <constraint firstItem="9V7-cz-cvZ" firstAttribute="top" secondItem="GpP-al-1mB" secondAttribute="bottom" id="ZLn-KQ-jbr"/>
+                        <constraint firstItem="GpP-al-1mB" firstAttribute="leading" secondItem="lI1-bi-jwR" secondAttribute="leading" id="ntt-Sa-lY3"/>
+                        <constraint firstAttribute="trailing" secondItem="GpP-al-1mB" secondAttribute="trailing" id="qd1-Gg-M9C"/>
+                        <constraint firstItem="9V7-cz-cvZ" firstAttribute="leading" secondItem="GpP-al-1mB" secondAttribute="leading" id="ytd-qH-zQ8"/>
+                        <constraint firstItem="GpP-al-1mB" firstAttribute="top" secondItem="lI1-bi-jwR" secondAttribute="top" id="zTM-xD-5OU"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="lI1-bi-jwR" secondAttribute="trailing" id="Jof-hZ-P5Q"/>
+                <constraint firstAttribute="bottom" secondItem="lI1-bi-jwR" secondAttribute="bottom" id="TO4-LL-aOO"/>
+                <constraint firstItem="lI1-bi-jwR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="VbG-uI-hbk"/>
+                <constraint firstItem="lI1-bi-jwR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ei7-ac-xmS"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>
