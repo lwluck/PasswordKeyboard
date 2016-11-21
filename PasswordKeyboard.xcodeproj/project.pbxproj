@@ -15,6 +15,7 @@
 		6E062E851DE2914800706010 /* PasswordKeyboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E062E841DE2914800706010 /* PasswordKeyboardTests.swift */; };
 		6E062E961DE291EB00706010 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E062E951DE291EB00706010 /* KeyboardViewController.swift */; };
 		6E062E9A1DE291EB00706010 /* Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6E062E931DE291EB00706010 /* Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6E77CE081DE2B37900D3BD7D /* AuthenticationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E77CE071DE2B37900D3BD7D /* AuthenticationView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		6E062E971DE291EB00706010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E062E9F1DE29CBA00706010 /* PasswordKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PasswordKeyboard.entitlements; sourceTree = "<group>"; };
 		6E062EA01DE29CF700706010 /* Keyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Keyboard.entitlements; sourceTree = "<group>"; };
+		6E77CE071DE2B37900D3BD7D /* AuthenticationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthenticationView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				6E062EA01DE29CF700706010 /* Keyboard.entitlements */,
 				6E062E951DE291EB00706010 /* KeyboardViewController.swift */,
 				6E062E971DE291EB00706010 /* Info.plist */,
+				6E77CE071DE2B37900D3BD7D /* AuthenticationView.xib */,
 			);
 			path = Keyboard;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E77CE081DE2B37900D3BD7D /* AuthenticationView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,6 +549,7 @@
 				6E062E8B1DE2914800706010 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E062E8C1DE2914800706010 /* Build configuration list for PBXNativeTarget "PasswordKeyboardTests" */ = {
 			isa = XCConfigurationList;
@@ -553,6 +558,7 @@
 				6E062E8E1DE2914800706010 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E062E9B1DE291EB00706010 /* Build configuration list for PBXNativeTarget "Keyboard" */ = {
 			isa = XCConfigurationList;
@@ -561,6 +567,7 @@
 				6E062E9D1DE291EB00706010 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
