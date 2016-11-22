@@ -20,7 +20,7 @@ class KeyboardViewController: UIInputViewController, AuthenticationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        setupKeyboardForAuthentication()
+        authenticateKeyboard()
 
     }
 
@@ -49,8 +49,7 @@ class KeyboardViewController: UIInputViewController, AuthenticationDelegate {
         authenticationView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
     }
 
-    /// Sadly this does not work in the extension
-    func authenticateWithTouchID() {
+    func authenticateKeyboard() {
         let authContext: LAContext = LAContext()
         var error: NSError?
 
@@ -64,11 +63,13 @@ class KeyboardViewController: UIInputViewController, AuthenticationDelegate {
                     self?.updateKeyboardAfterAuthentication()
                 } else {
                     // Probably should do some other form of authentication or tell the user to switch keyboards
+                    self?.setupKeyboardForAuthentication()
                 }
             })
 
         } else {
             // Probably should do some other form of authentication or tell the user to switch keyboards
+            setupKeyboardForAuthentication()
         }
     }
 
@@ -111,11 +112,6 @@ class KeyboardViewController: UIInputViewController, AuthenticationDelegate {
             button.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
             currentTopView = button
         }
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated
     }
     
     override func textWillChange(_ textInput: UITextInput?) {
