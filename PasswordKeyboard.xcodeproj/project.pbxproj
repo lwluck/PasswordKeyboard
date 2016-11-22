@@ -19,6 +19,7 @@
 		6E77CE0A1DE2B88600D3BD7D /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E77CE091DE2B88600D3BD7D /* AuthenticationView.swift */; };
 		6E77CE0C1DE2B8F500D3BD7D /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E77CE0B1DE2B8F500D3BD7D /* KeyboardView.xib */; };
 		6E77CE0E1DE2B95900D3BD7D /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E77CE0D1DE2B95900D3BD7D /* KeyboardView.swift */; };
+		6E77CE101DE3D1BF00D3BD7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E062E761DE2914700706010 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -294,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E77CE081DE2B37900D3BD7D /* AuthenticationView.xib in Resources */,
+				6E77CE101DE3D1BF00D3BD7D /* Assets.xcassets in Resources */,
 				6E77CE0C1DE2B8F500D3BD7D /* KeyboardView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

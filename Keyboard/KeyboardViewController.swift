@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import LocalAuthentication
 
 class KeyboardViewController: UIInputViewController, AuthenticationDelegate {
 
@@ -20,8 +19,7 @@ class KeyboardViewController: UIInputViewController, AuthenticationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        authenticateKeyboard()
-
+        setupKeyboardForAuthentication()
     }
 
     func didPressNextKeyboard(_ sender: UIView) {
@@ -47,30 +45,6 @@ class KeyboardViewController: UIInputViewController, AuthenticationDelegate {
         authenticationView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         authenticationView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         authenticationView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-    }
-
-    func authenticateKeyboard() {
-        let authContext: LAContext = LAContext()
-        var error: NSError?
-
-        //Is Touch ID hardware available & configured?
-        if authContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
-
-            // Perform Touch ID Auth
-            authContext.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "Unlocking Password Valut", reply: {[weak self] (successful, error) in
-                if successful {
-                    // User authenticated
-                    self?.updateKeyboardAfterAuthentication()
-                } else {
-                    // Probably should do some other form of authentication or tell the user to switch keyboards
-                    self?.setupKeyboardForAuthentication()
-                }
-            })
-
-        } else {
-            // Probably should do some other form of authentication or tell the user to switch keyboards
-            setupKeyboardForAuthentication()
-        }
     }
 
     func updateKeyboardAfterAuthentication() {
