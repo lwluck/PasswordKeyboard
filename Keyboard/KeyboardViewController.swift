@@ -25,7 +25,7 @@ class KeyboardViewController: UIInputViewController, AuthenticationDelegate {
     }
 
     func didPressNextKeyboard(_ sender: UIView) {
-        handleInputModeList(from: sender, with: UIEvent())
+        advanceToNextInputMode()
     }
 
     func authenticationSuccessful() {
