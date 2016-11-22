@@ -104,10 +104,6 @@ class KeyboardViewController: UIInputViewController, AuthenticationDelegate {
         }
 //        self.nextKeyboardButton.setTitleColor(textColor, for: [])
     }
-
-    func didPressAuthenticationKeyboardButton(_ button: UIButton) {
-        
-    }
     
     func didPressKeyboardButton(_ button: UIButton) {
         guard let defaults = UserDefaults(suiteName: "group.com.lwluck.passwordkeyboard"),
