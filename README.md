@@ -14,16 +14,16 @@ A Proof of Concept keyboard that will allow a user to easily fill usernames and 
 Once installed you will probably want to test the keyboard out. Below is an example of how to use the keyboard.
 
 ### 1. Switch to the keyboard by using the Globe button on the main iOS keyboard.
-![img_4484](https://cloud.githubusercontent.com/assets/20807983/20507995/75f80932-b02c-11e6-868d-ef3a4d64d73a.PNG)
+<img src="https://cloud.githubusercontent.com/assets/20807983/20507995/75f80932-b02c-11e6-868d-ef3a4d64d73a.PNG" height=400px>
 
 
 ### 2. Unlock the keyboard by tapping the Touch ID button on the keyboard and authenticating using Touch ID or type PASSWORD and hit Submit.
-![img_4485](https://cloud.githubusercontent.com/assets/20807983/20507992/73a7eb34-b02c-11e6-9625-ee6568c47ebe.PNG)
+<img src="https://cloud.githubusercontent.com/assets/20807983/20507992/73a7eb34-b02c-11e6-9625-ee6568c47ebe.PNG" height=400px>
 
 
 ### 3. Select the username that you would like to login with and then select the password field and bring up the paste option.
-![img_4486](https://cloud.githubusercontent.com/assets/20807983/20507988/71c20c8c-b02c-11e6-8820-3fb58f26d089.PNG)
+<img src="https://cloud.githubusercontent.com/assets/20807983/20507988/71c20c8c-b02c-11e6-8820-3fb58f26d089.PNG" height=400px>
 
 
 ### 4. Select paste in order to autofill the password. Pressing Submit in the PasswordKeyboard app will then show you the entered username and password.
-![img_4487](https://cloud.githubusercontent.com/assets/20807983/20507983/6f9f6576-b02c-11e6-986a-d004bc99250e.PNG)
+<img src="https://cloud.githubusercontent.com/assets/20807983/20507983/6f9f6576-b02c-11e6-986a-d004bc99250e.PNG" height=400px>
